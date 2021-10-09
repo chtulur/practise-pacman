@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: black;
+	color: whitesmoke;
+	font-size: 22.5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: 560px;
+	height: 560px;
+	border: solid white;
+}
+.grid div {
+	width: 20px;
+	height: 20px;
+}
+.pac-dot {
+	background-color: green;
+	border: 5px solid black;
+	box-sizing: border-box;
+}
+.wall {
+	background-color: blue;
+}
+.power-pellet {
+	background-color: green;
+	border-radius: 10px;
+}
+.ghost-lair {
+	background-color: rgb(73, 23, 119);
+}
+.pac-man {
+	background-color: yellow;
+	border-radius: 10px;
+}
+/*GHOSTS*/
+.inky {
+	background-color: cyan;
+	border: 0;
+	border-radius: 10px 10px 0 0;
+}
+
+.blinky {
+	background-color: red;
+	border: 0;
+	border-radius: 10px 10px 0 0;
+}
+.pinky {
+	background-color: pink;
+	border: 0;
+	border-radius: 10px 10px 0 0;
+}
+.clyde {
+	background-color: orange;
+	border: 0;
+	border-radius: 10px 10px 0 0;
+}
+
+/*ENDGAME SCREEN*/
+#endGameScreen {
+	display: none;
+	background-color: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+#endGameText {
+	display: none;
+	font-family: "Times New Roman";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: rgb(250, 216, 25);
+	text-shadow: 0 0 10px rgb(250, 216, 25);
+	justify-content: center;
+	align-items: center;
+	font-size: 70px;
+	flex-direction: column;
+}
+#endGameText.show {
+	display: flex;
+}
+#endGameScreen.show {
+	display: flex;
+}
+
+#restartButton {
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(51, 51, 255);
+	border: transparent;
+	border-radius: 5px;
+	color: white;
+	font-size: 25px;
+}
+#restartButton:hover {
+	background-color: rgb(0, 0, 255);
+	transition: 0.3s;
+	box-shadow: inset 0 0 30px 5px rgb(23, 85, 255);
+}
+#restartButton:focus {
+	box-shadow: inset 0 0 30px 5px rgb(0, 14, 51);
+}
+
+#lose-screen-text {
+	display: none;
+	font-family: "Times New Roman";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: rgb(224, 0, 0);
+	text-shadow: 0 0 10px rgb(187, 1, 1);
+	justify-content: center;
+	align-items: center;
+	font-size: 70px;
+	flex-direction: column;
+}
+#lose-screen-text.show {
+	display: flex;
+}
+
+.saveScore {
+	display: flex;
+	align-items: center;
+}
